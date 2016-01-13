@@ -1,9 +1,10 @@
-  var app = angular.module('StarterApp', ['ngMaterial', 'ngMdIcons']);
+  var app = angular.module('StarterApp', ['ngMaterial', 'ngMdIcons', 'ngRoute']); 
 
   app.controller('AppCtrl', ['$scope', '$mdBottomSheet','$mdSidenav', '$mdDialog', function($scope, $mdBottomSheet, $mdSidenav, $mdDialog){
     $scope.toggleSidenav = function(menuId) {
       $mdSidenav(menuId).toggle();
     };
+
 
    	$scope.menu = [
       {
@@ -222,7 +223,7 @@
     };
   });
 
-  app.config(function($mdThemingProvider) {
+  app.config(function ($mdThemingProvider) {
     var customBlueMap = 		$mdThemingProvider.extendPalette('light-blue', {
       'contrastDefaultColor': 'light',
       'contrastDarkColors': ['50'],
@@ -238,3 +239,23 @@
     $mdThemingProvider.theme('input', 'default')
           .primaryPalette('grey')
   });
+
+
+
+app.config(function ($routeProvider) {
+    $routeProvider
+     .when('/', {
+         templateUrl: '/pages/dashboard.html',
+         //controller: 'indexController1'
+     })
+     .when('/Blog', {
+         templateUrl: '/pages/blog.html',
+         //controller: 'indexController2'
+     })
+     .otherwise({
+         redirectTo: '/'
+     });
+});
+
+
+ 

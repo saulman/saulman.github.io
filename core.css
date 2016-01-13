@@ -119,7 +119,7 @@
       }
 
       #chat .md-button{
-        font-weight: 800;
+        font-weight: 600;
       }
 
       .icon{
@@ -179,5 +179,9 @@
         padding: 5px 10px;
         background-color: #03A9F4;
         margin-right: 5px;
+     }
+
+     .no-input-error > .md-errors-spacer{
+      display: none;
      }
 
