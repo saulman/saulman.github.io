@@ -1,0 +1,183 @@
+ body {
+        color: rgba(0,0,0,0.37)
+      }
+
+
+     ::-webkit-scrollbar { 
+      display: none; 
+  }
+      $gray: #eee;
+
+     
+      md-content.md-default-theme {
+        background-color: $gray;
+      }
+      md-card {
+        background-color: #fff;
+        h2:first-of-type {
+          margin-top: 0;
+        }
+      }
+      md-toolbar {
+        .md-button.md-default-theme {
+          border-radius: 99%; // round toolbar buttons
+        }
+      }
+      md-content.md-default-theme, md-content{
+            color: #757575;
+      }
+      h2 {
+        font-weight: 400;
+      }
+      q{
+        font-style: italic !important;
+      }
+      .md-toolbar-tools-bottom {
+        font-size: small;
+        & :last-child {
+          opacity: 0.8;
+        }
+      }
+      md-toolbar:not(.md-hue-1),
+      .md-fab {
+        fill: #fff;
+      }
+      md-sidenav {
+        fill: #737373;
+        ng-md-icon {
+          position: relative;
+          top: 5px; // adjust for svg viewbox
+        }
+      }
+      .user-avatar {
+        border-radius: 99%;
+      }
+
+
+      md-toolbar.md-tall{
+        height: 460px;
+        min-height: 460px;
+        max-height: 460px;
+      }
+
+      .user-toolbar{
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,.14)
+      }
+      .main-avatar{
+        height: 100px;
+      }
+      md-sidenav.md-locked-open {
+        width: 380px;
+        min-width: 380px;
+        max-width: 380px;
+      }
+
+      md-sidenav > .mainMenu {
+        margin-top: -114px;
+        z-index: 3;
+      }
+      .font-12{
+        font-size: 12px;
+      }
+      .md-toolbar-tools{
+        font-size:12px;
+      }
+      .weather-bg{
+        background-image: url('./images/chicago_sunny.jpg') ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 300px;
+        
+      }
+
+      .portfolio-bg{
+        background-image: url('./images/web_design.jpg') ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 250px;
+      }
+      .padding-8{
+       
+      }
+      .message{
+        webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        padding: 10px;
+      }
+
+      .question{
+        background-color: rgb(3,169,244);
+        color: rgba(255,255,255,0.87);
+      }
+      .answer{
+        margin-right:10px;
+      }
+      .margin-top-20{
+        margin-top: 20px;
+      }
+
+      #chat .md-button{
+        font-weight: 800;
+      }
+
+      .icon{
+        background-color: rgb(224, 224, 224);
+        border-radius: 50%;
+        margin: 0 10px 0 0;
+        padding: 10px;
+
+      }
+      .clickable[md-ink-ripple] {
+        position: relative;
+      }
+
+      .weather-header{
+        background-image: url('./images/chicago_sunny.jpg') ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+       
+      }
+
+
+      .widget-title{
+        position: absolute;
+        color: #ffffff;
+      }
+
+      .weather-header > md-content{
+        background-color: #fff;
+      }
+
+      .weather-temp{
+        width: 120px;
+        height: 120px;
+        background: #FFEB3B;
+        border-radius: 0 0 0 120px;
+        -moz-border-radius: 0 0 0 120px;
+        -webkit-border-radius: 0 0 0 120px;
+      }
+
+      .weather-temp span{
+        margin-right: 5px;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      .fab-button{
+        margin-top: -30px;
+        padding-right: 25px;
+      }
+
+      ng-md-icon svg {
+        vertical-align: middle;
+      }
+
+     .chip{
+        padding: 5px 10px;
+        background-color: #03A9F4;
+        margin-right: 5px;
+     }
+
