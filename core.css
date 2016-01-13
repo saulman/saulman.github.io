@@ -32,6 +32,9 @@
       q{
         font-style: italic !important;
       }
+      a{
+        text-decoration: none;
+      }
       .md-toolbar-tools-bottom {
         font-size: small;
         & :last-child {
