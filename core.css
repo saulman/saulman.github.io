@@ -1,5 +1,6 @@
  body {
-        color: rgba(0,0,0,0.37)
+        color: rgba(0,0,0,0.37);
+        background-color: #ECECEC;
       }
 
 
@@ -83,7 +84,7 @@
         font-size: 12px;
       }
       .md-toolbar-tools{
-        font-size:12px;
+        /*font-size:12px;*/
       }
       .weather-bg{
         background-image: url('./images/chicago_sunny.jpg') ;
@@ -185,6 +186,12 @@
      }
 
      .no-input-error > .md-errors-spacer{
-      display: none;
+        display: none;
      }
 
+    
+    md-content.md-default-theme, md-content {
+       background-color: #ECECEC;
+    }
+
+   

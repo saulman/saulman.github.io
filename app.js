@@ -5,46 +5,56 @@
       $mdSidenav(menuId).toggle();
     };
 
+    $scope.CustomStyle = {};
+    $scope.imagePath = 'images/chicago_sunny.jpg';
+    $scope.DashboardColor = "{'background-color': '#81C784'}";
+    $scope.QuestionsColor = "{'background-color': '#FDD835'}";
+    $scope.BlogColor = "{'background-color': '#3F51B5'}";
+    $scope.PortfolioColor = "{'background-color': '#29B6F6'}"
+    $scope.ResumeColor = "{'background-color': '#FFA726'}";
+    $scope.ContactsColor = "{'background-color': '#F44336'}";
+
+    
 
    	$scope.menu = [
       {
         link : '',
-        bgColor : '#81C784',
+        bgColor : $scope.DashboardColor,
         txtColor : '#EEEEEE',
         title: 'Dashboard',
         icon: 'dashboard'
       },
       {
         link : '',
-        bgColor : '#FDD835',
+        bgColor : $scope.QuestionsColor,
         txtColor : '#EEEEEE',
-        title: 'Messages',
-        icon: 'message'
+        title: 'Questions',
+        icon: 'question_answer'
       },
       {
         link : '',
-        bgColor : '#3F51B5',
+        bgColor : $scope.BlogColor,
         txtColor : '#EEEEEE',
         title: 'Blog',
         icon: 'view_list'
       },
       {
         link : '',
-        bgColor : '#29B6F6',
+        bgColor : $scope.PortfolioColor,
         txtColor : '#EEEEEE',
         title: 'Portfolio',
         icon: 'view_carousel'
       },
       {
         link : '',
-        bgColor : '#FFA726',
+        bgColor : $scope.ResumeColor,
         txtColor : '#EEEEEE',
         title: 'Resume',
         icon: 'description'
       },
       {
         link : '',
-        bgColor : '#F44336',
+        bgColor : $scope.ContactsColor,
         txtColor : '#EEEEEE',
         title: 'Contacts',
         icon: 'call'
@@ -87,7 +97,15 @@
         link : '',
         user: 'info',
         guest: 'timer_auto',
-        question: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        question: 'Lorem Ipsum summy text of the printing and typesetting industry.',
+        answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+
+      },
+      {
+        link : '',
+        user: 'info',
+        guest: 'timer_auto',
+        question: 'Lorem Ipsum is simply dummy text of the printing ansting industry.',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
 
       }
@@ -242,20 +260,41 @@
 
 
 
-app.config(function ($routeProvider) {
+app.config(['$routeProvider','$locationProvider',
+    function($routeProvider, $locationProvider) {
     $routeProvider
      .when('/', {
          templateUrl: '/pages/dashboard.html',
          //controller: 'indexController1'
      })
+     .when('/Questions', {
+         templateUrl: '/pages/questions.html',
+         //controller: 'indexController2'
+     })
      .when('/Blog', {
          templateUrl: '/pages/blog.html',
+         //controller: 'indexController2'
+     })
+     .when('/Portfolio', {
+         templateUrl: '/pages/portfolio.html',
+         //controller: 'indexController2'
+     })
+     .when('/Resume', {
+         templateUrl: '/pages/resume.html',
+         //controller: 'indexController2'
+     })
+     .when('/Contacts', {
+         templateUrl: '/pages/contacts.html',
          //controller: 'indexController2'
      })
      .otherwise({
          redirectTo: '/'
      });
-});
+
+
+  
+
+ }]);
 
 
  
